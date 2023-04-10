@@ -20,11 +20,11 @@ const Job = ({job}) => {
 {/*salary and city  */}
             <div className='flex space-x-3 my-2'>
             <div className='flex text-gray-500 '>
-            <MapPinIcon className="h-6 w-6 text-gray-300 me-1" />
+            <MapPinIcon className="h-6 w-6 text-gray-400 me-1" />
             <p>{city ? city : 'Dhaka'},</p><p>{country ? country : 'Bangladesh'}</p>
             </div>
             <div className='flex text-gray-500'>
-            <CurrencyDollarIcon className="h-6 w-6 text-gray-300 me-1" />
+            <CurrencyDollarIcon className="h-6 w-6 text-gray-400 me-1" />
             <p>Salary :{salary}</p>
             </div>
             </div>
