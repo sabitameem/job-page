@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.my-container{
+    @apply px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20
+  }
+
+.active{
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600
+}
+
+.default{
+    @apply text-gray-500
+}
+
+.btn{
+    @apply bg-gradient-to-r from-cyan-400 to-purple-500 text-white p-2 rounded-lg
+}
