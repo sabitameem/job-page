@@ -1,10 +1,11 @@
 import React from 'react';
 import {MapPinIcon,CurrencyDollarIcon} from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 const Job = ({job}) => {
-    console.log(job)
-    const {postName,compName,type,city,country,salary,img}=job;
-    console.log(type)
+    // console.log(job)
+    const {postName,compName,type,city,country,salary,img,system,id}=job;
+    // console.log(type)
     return (
         <div className='border-2 border-slate-100 rounded-lg ps-3 py-5'>
             <img className='w-24 h-14 p-2' src={img} alt="" />
@@ -13,8 +14,7 @@ const Job = ({job}) => {
 {/* job type button */}
             <div className='flex space-x-3'>
                 <button className='btn-outline'>{type}</button>
-                
-                <button className='btn'>Full Time</button>
+                <button className='btn-outline'>{system}</button>
             </div>
 
 {/*salary and city  */}
@@ -29,7 +29,7 @@ const Job = ({job}) => {
             </div>
             </div>
 {/* details btn */}
-          <button className='btn'>View Details</button>
+         <Link to={`/job/${id}`}> <button className='btn'>View Details</button> </Link>
         </div>
     );
 };

@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Statistics from './components/Statistics'
 import AppliedJob from './components/AppliedJob'
 import Blog from './components/Blog'
+import JobDetails from './components/JobDetails'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -16,6 +17,16 @@ const router = createBrowserRouter([{
     path: '/',
     element: <Home></Home>,
     loader: ()=>fetch('/jobs.json'),
+   },
+   {
+    path: 'job/:id',
+    element: <JobDetails></JobDetails>,
+    loader :async({params})=> {
+      const res= await fetch('jobs.json')
+      const data = await res.json();
+
+      const findedData = data.find(phone =>phone.id==params.id)
+      return findedData;}
    },
    {
     path:'/statistics',
