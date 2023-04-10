@@ -18,3 +18,8 @@
 .btn{
     @apply bg-gradient-to-r from-cyan-400 to-purple-500 text-white p-2 rounded-lg
 }
+
+.btn-outline{
+   @apply bg-transparent hover:bg-purple-600 text-purple-950 font-medium px-1 hover:text-white border border-purple-700 hover:border-transparent rounded;
+   
+}
