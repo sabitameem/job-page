@@ -6,7 +6,7 @@ const Footer = () => {
            <div className='lg:w-[30%] sm:me-2'>
             <h2 className='text-2xl font-bold sm:text-lg '>Job Page</h2>
             <p className='text-gray-500 sm:[h-30%] lg:text-base sm:text-sm'>Job Page is the world's leader in technical interviewing. We partner with organizations to increase capacity to interview</p>
-            <img className='sm:w-[50%] sm:h-[50%] mt-1' src="/src/assets/Icons/Group 9969.png" alt="" />
+            <img className='sm:w-[50%] sm:h-[50%] mt-1' src="https://i.ibb.co/r3hpsv9/Group-9969.png" alt="" />
            </div>
 
          <div className='lg:flex'>
