@@ -25,7 +25,7 @@ const router = createBrowserRouter([{
     path: 'job/:id',
     element: <JobDetails></JobDetails>,
     loader :async({params})=> {
-      const res= await fetch('jobs.json')
+      const res= await fetch('/jobs.json')
       const data = await res.json();
 
       const findedData = data.find(phone =>phone.id==params.id)
