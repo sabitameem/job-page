@@ -81,7 +81,7 @@ const JobDetails = () => {
 {/*box end  */}
 </div>
 
-<button className='bg-purple-400 mt-4 lg:ms-[40%] ms-[20%] text-white rounded-lg p-3 w-36 lg:w-56 mb-8'>Apply Now</button>
+<button className='bg-purple-400 hover:bg-purple-900 mt-4 lg:ms-[40%] ms-[20%] text-white rounded-lg p-3 w-36 lg:w-56 mb-8'>Apply Now</button>
         </div>
     );
 };
