@@ -9,7 +9,7 @@ const JobDetails = () => {
     return (
         <div>
             <div className='bg-gray-100'>
-                <img className='relative' src="/src/assets/All Images/Vector.png" alt="" />
+                <img className='relative h-9 lg:h-[140px]' src="https://i.ibb.co/gjN3xK0/Vector.png" alt="" />
                 <p className='text-3xl lg:absolute lg:top-32 end-1/2 text-gray-800 text-center font-bold'>Job Details</p>
 
                
