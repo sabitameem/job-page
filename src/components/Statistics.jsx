@@ -1,5 +1,6 @@
 import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+
 const data = [
     { name: 'A1', value: 55 },
     { name: 'A2', value: 57 },
@@ -15,9 +16,8 @@ const Statistics = () => {
     return (
         <div className='w-[300px] h-[150px] lg:w-[600px] lg:h-[300px] mx-auto mt-5 mb-14'>
             <h2 className='text-xl text-purple-400 lg:text-2xl font-bold mb-3'>My Assignment Marks :</h2>
-           <ResponsiveContainer width='100%' height='100%'>
-          <LineChart
-            width={800} height={400}
+            <ResponsiveContainer>
+          <AreaChart
             data={data}
             margin={{
               top: 10,
@@ -30,8 +30,8 @@ const Statistics = () => {
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
-            <Line connectNulls type="monotone" dataKey="value" stroke="#8884d8" fill="#8884d8" />
-          </LineChart>
+            <Area type="monotone" dataKey="value" stroke="#8884d8" fill="#8884d8" />
+          </AreaChart>
         </ResponsiveContainer> 
         </div>
     );
