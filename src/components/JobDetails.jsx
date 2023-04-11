@@ -1,11 +1,13 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import {BriefcaseIcon,CurrencyDollarIcon,EnvelopeIcon,MapPinIcon,PhoneIcon} from '@heroicons/react/24/solid'
+import addToDb from '../utilitis/fakeDB';
 
 const JobDetails = () => {
     const data = useLoaderData()
-    console.log(data)
-    const {jobDesc,jobResponsibility,eduReq,experience,salary,postName,phone,email,streetAddress}= data;
+    // console.log(data)
+    const {jobDesc,jobResponsibility,eduReq,experience,salary,postName,phone,email,streetAddress,id}= data;
+    console.log(id)
     return (
         <div>
             <div className='bg-gray-100'>
