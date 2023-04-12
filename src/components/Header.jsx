@@ -80,7 +80,7 @@ const Header = () => {
                    <nav>
                    <ul className='space-y-4'>
                     <li>
-                      <Link to='/statistics' className='default'>
+                      <Link to='/statistics'  className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400'>
                       Statistics
                       </Link>
                     </li>

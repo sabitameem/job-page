@@ -1,14 +1,11 @@
-// use local storage to manage cart data
-// const addToDb = id => {
-//     let appliedJob = {}
-  
-//     //get the shopping cart from local storage
-//     const storedCart = localStorage.getItem('applied-job')
-//     if (storedCart) {
-//       appliedJob = JSON.parse(storedCart)
-//     }
-//     localStorage.setItem('applied-job', JSON.stringify(appliedJob))
-  
-//   }
+function setJobToLocalStorage(job) {
+  // Get existing job data from local storage
+  const existingJobs = JSON.parse(localStorage.getItem('jobs')) || [];
 
-//   export default addToDb;
+  // Add new job to existing job data
+  existingJobs.push(job);
+
+  // Save updated job data back to local storage
+  localStorage.setItem('jobs', JSON.stringify(existingJobs));
+}
+export default setJobToLocalStorage;
