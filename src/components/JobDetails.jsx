@@ -8,7 +8,7 @@ const JobDetails = () => {
     const data = useLoaderData()
     // console.log(data)
     const {jobDesc,jobResponsibility,eduReq,experience,salary,postName,phone,email,streetAddress,id}= data;
-    console.log(id)
+    // console.log(id)
     
 
 

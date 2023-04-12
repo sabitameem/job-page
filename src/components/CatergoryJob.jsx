@@ -24,7 +24,7 @@ const CatergoryJob = () => {
             {
                 data?.map((singleCategory) =>{
                     return <SingleCategory
-                    key={data.id}
+                    key={singleCategory.id}
                     singleCategory={singleCategory}
                     ></SingleCategory>
                 })
